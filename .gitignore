@@ -21,3 +21,8 @@ Thumbs.db
 # TypeScript cache
 *.tsbuildinfo
 
+
+# Elastic Beanstalk Files
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
