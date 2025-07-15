@@ -16,8 +16,8 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 
-app.use('/', apiKeyAuth, userFeed)
-app.use('/', apiKeyAuth, uploadProfilePhoto)
+app.use('/', userFeed)
+app.use('/', uploadProfilePhoto)
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`)
