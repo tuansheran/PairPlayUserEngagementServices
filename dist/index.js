@@ -11,7 +11,7 @@ const uploadProfilePhoto_1 = __importDefault(require("./route/uploadProfilePhoto
 const apiKeyAuth_1 = require("./middleware/apiKeyAuth");
 dotenv_1.default.config();
 const app = (0, express_1.default)();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT;
 app.set('trust proxy', true);
 app.use((0, cors_1.default)());
 app.use(express_1.default.json());

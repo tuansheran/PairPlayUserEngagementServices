@@ -7,10 +7,10 @@ import { apiKeyAuth } from './middleware/apiKeyAuth'
 
 dotenv.config()
 
-const app = express();
-const PORT = process.env.PORT || 8080;
+const app = express()
+const PORT = process.env.PORT
 
-app.set('trust proxy', true);
+app.set('trust proxy', true)
 app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
